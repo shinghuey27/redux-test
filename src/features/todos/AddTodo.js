@@ -22,8 +22,8 @@ const AddTodo = ({ addTodo }) => {
           setTodoText("");
         }}
       >
-        <TextField variant="standard" value={todoText} onChange={onChange} />
-        <Button type="submit">Add Todo</Button>
+        <TextField variant="standard" value={todoText} onChange={onChange} placeholder="Enter something...." />
+        <Button variant="contained" type="submit" sx={{marginLeft:"1rem",backgroundColor:"#5783db"}}>Add Todo</Button>
       </form>
     </div>
   );
